@@ -13,23 +13,26 @@
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <script src="js/bootstrap.min.js"></script>
 <script src="js/bootswatch.js"></script>
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
         <link rel="stylesheet" href="css/flatly.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
 -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Cabin:400,500,600,700,400italic' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic' rel='stylesheet' type='text/css'>
+<!-- <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic' rel='stylesheet' type='text/css'> -->
     <link rel="stylesheet" href="css/bootstrap-flatly.css" media="screen">
+    <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/om-style.css" media="screen">
+    <script src="js/time-anchor.js"></script>
+
+
 <!--     <link rel="stylesheet" href="css/bootswatch.min.css"> -->
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
       <script src="../bower_components/respond/dest/respond.min.js"></script>
     <![endif]-->
-
     </head>
-    <body>
+    <body onload="moveWindow()">
 
 
       <!-- Navbar
@@ -70,8 +73,6 @@
       </div>
     </div>
 
-
-
 <div style="height:70px;">
 </div>
 
@@ -84,73 +85,112 @@
 
 
 
+<!-- LEFT HAND SIDE -- GO TO ANOTHER STAGE -->
+          <div class="col-lg-2">Go Left
+          </div>
 
-          <div class="col-lg-12">
-          
-          
-          
-<!-- INDIVIDUAL STAGE  ----   ARTIST/TIME  BUTTON -->
-            <div class="bs-component" style="margin-bottom: 15px;">
+
+
+
+<!-- CENTER COLUMN -->
+          <div class="col-lg-8">
+
+<!-- ANCHOR TIMES -->
+             <a id='1200' name='1200'></a>
+   
+
+<!-- REPEAT LISTING -->        
+            <p class="bs-component stage-store-btn">
+              <button type="button" class="btn btn-default btn-lg btn-block stage-store-btn">Rayland Baxter<br>
+              <span>12:00 - 12:40 - Sutro Stage</span>
               <div class="btn-group btn-group-justified">
-<!-- LEFT SIDE === STAGE  -->
-<!-- LINK TO STAGE PAGE VIEW  -->
-                <a href="#" class="btn btn-default stage-left">Sutro</a>
-<!-- RIGHT SIDE === ARTIST/TIME  -->
-<!-- LINK TO STAGE PAGE VIEW? OR ARTIST STORE?   -->
-                <a href="#" class="btn btn-default">Rayland Baxter<br><span>12:00 - 12:40</span></a>
+                <a href="#" class="btn  stage-store-btn">Store</a>
               </div>
-            </div>
+              </button>
+            </p>
+           <a id='1205' name='1205'></a>
 
-
-<!-- REPEAT -->
-
-            <div class="bs-component" style="margin-bottom: 15px;">
+            <p class="bs-component stage-store-btn">
+              <button type="button" class="btn btn-default btn-lg btn-block stage-store-btn">Night Terrors of 1927<br>
+              <span>12:00 - 12:40 - Panhandle Stage</span>
               <div class="btn-group btn-group-justified">
-                <a href="#" class="btn btn-default stage-left">Panhandle</a>
-                <a href="#" class="btn btn-default">Night Terrors of 1927<br><span>12:00 - 12:40</span></a>
+                <a href="#" class="btn  stage-store-btn">Store</a>
               </div>
-            </div>
+              </button>
+            </p>
 
-            <div class="bs-component" style="margin-bottom: 15px;">
+
+           <a id='1210' name='1210'></a>
+           <a id='1215' name='1215'></a>
+           <a id='1220' name='1220'></a>
+           <a id='1225' name='1225'></a>
+
+            <p class="bs-component stage-store-btn">
+              <button type="button" class="btn btn-default btn-lg btn-block stage-store-btn">Shouts!<br>
+              <span>12:00 - 1:30 - The House by Heineken</span>
               <div class="btn-group btn-group-justified">
-                <a href="#" class="btn btn-default stage-left">The House by Heineken</a>
-                
-                <a href="#" class="btn btn-default"><div style="display:inline-block;"> Shouts!<br><span>12:00 - 1:30</span></div><span class="glyphicon glyphicon-shopping-cart" style="font-size: 2em;margin-left:20px;"></span></a>
+                <a href="#" class="btn  stage-store-btn">Store</a>
               </div>
-            </div>
+              </button>
+            </p>
 
-            <div class="bs-component" style="margin-bottom: 15px;">
+            <a id='1230' name='1230'></a>
+           <p class="bs-component stage-store-btn">
+              <button type="button" class="btn btn-default btn-lg btn-block stage-store-btn">The Soul Rebels<br>
+              <span>12:40 - 1:30 - Lands End Stage</span>
               <div class="btn-group btn-group-justified">
-                <a href="#" class="btn btn-default stage-left">Lands End</a>
-                <a href="#" class="btn btn-default">The Soul Rebels<br><span>12:40 - 1:30</span></a>
+                <a href="#" class="btn  stage-store-btn">Store</a>
               </div>
-            </div>
+              </button>
+            </p>
 
-            <div class="bs-component" style="margin-bottom: 15px;">
+            <a id='1235' name='1235'></a>
+           <p class="bs-component stage-store-btn">
+              <button type="button" class="btn btn-default btn-lg btn-block stage-store-btn">AER<br>
+              <span>12:40 - 1:30 - Twin Peaks Stage</span>
               <div class="btn-group btn-group-justified">
-                <a href="#" class="btn btn-default stage-left">Twin Peaks</a>
-                <a href="#" class="btn btn-default">AER<br><span>12:45 - 1:30</span></a>
+                <a href="#" class="btn  stage-store-btn">Store</a>
               </div>
-            </div>
+              </button>
+            </p>
 
-            <div class="bs-component" style="margin-bottom: 15px;">
+            <a id='1240' name='1240'></a>
+            <a id='1245' name='1245'></a>
+            <a id='1250' name='1250'></a>
+           <p class="bs-component stage-store-btn">
+              <button type="button" class="btn btn-default btn-lg btn-block stage-store-btn">Garfunkle & Oates and Aparna Nancherla<br>
+              <span>12:45 - 1:45 - The Barbary Stage</span>
               <div class="btn-group btn-group-justified">
-                <a href="#" class="btn btn-default stage-left">The Barbary</a>
-                <a href="#" class="btn btn-default">Garfunkle & Oates and Aparna Nancherla<br><span>12:45 - 1:45</span></a>
+                <a href="#" class="btn  stage-store-btn">Store</a>
               </div>
-            </div>
+              </button>
+            </p>
 
 
 
 
 
 
+          </div>
+<!-- RIGHT HAND SIDE -- GO TO ANOTHER STAGE -->
+          <div class="col-lg-2">Go right
+          </div>
 
 
+
+    </div>
 </div>
 
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
+
+
+
 <!--     <script src="js/bootswatch.js"></script> -->
 
 <!--         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script> -->
